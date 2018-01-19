@@ -34,14 +34,22 @@ class NetworkApi {
             return coin1Rank < coin2Rank
         }
         let lessThan1DollarCoins = sortedCoins.filter { coin -> Bool in
-            if let coinPriceUSD = Double.init(coin.price_usd), coinPriceUSD < Double(1.0) {
+            if let coinPriceUSD = Double(coin.price_usd), coinPriceUSD < Double(1.0) {
                 return true
             } else {
                 return false
             }
         }
-        print(lessThan1DollarCoins.description)
-        completion(lessThan1DollarCoins)
+
+        let topGainers = lessThan1DollarCoins.sorted { coin1, coin2 -> Bool in
+            guard let coin1PercentChange = Double(coin1.percent_change_24h),
+                let coin2PercentChange = Double(coin2.percent_change_24h) else {
+                return false
+            }
+            return coin1PercentChange > coin2PercentChange
+        }
+        print(topGainers.description)
+        completion(topGainers)
     }
 }
 

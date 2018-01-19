@@ -51,7 +51,7 @@ class CoinTableViewController: UITableViewController {
         cell.titleLabel.text = coin.name
         cell.rankLabel.text = coin.rank
         cell.priceUSDLabel.text = coin.price_usd
-
+        cell.change24hLabel.text = coin.percent_change_24h
         return cell
     }
 
