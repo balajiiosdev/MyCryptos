@@ -14,6 +14,8 @@ class CoinTableViewCell: UITableViewCell {
     @IBOutlet weak var rankLabel: UILabel!
 
     @IBOutlet weak var priceUSDLabel: UILabel!
+    
+    @IBOutlet weak var change24hLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

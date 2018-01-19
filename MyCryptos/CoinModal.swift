@@ -15,6 +15,7 @@ struct Coin: Codable {
     let rank: String
     let price_usd: String
     let price_btc: String
+    let percent_change_24h: String
 //    var market_cap_usd: String
 //    var available_supply: String
 //    var total_supply: String
@@ -29,5 +30,6 @@ struct Coin: Codable {
         case rank
         case price_usd
         case price_btc
+        case percent_change_24h
     }
 }

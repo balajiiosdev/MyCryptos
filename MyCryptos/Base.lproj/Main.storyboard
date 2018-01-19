@@ -69,9 +69,21 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="change_24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0Qr-g9-CiR">
+                                            <rect key="frame" x="267" y="11" width="92" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="efP-yB-wv5"/>
+                                                <constraint firstAttribute="width" constant="92" id="kjx-LY-Uli"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="ovA-sr-XDE" firstAttribute="top" secondItem="8sY-LT-9ER" secondAttribute="top" constant="11" id="1LY-nD-Yco"/>
+                                        <constraint firstItem="0Qr-g9-CiR" firstAttribute="trailing" secondItem="8sY-LT-9ER" secondAttribute="trailingMargin" id="2Oa-2i-U7d"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="0Qr-g9-CiR" secondAttribute="bottom" constant="1" id="Cqq-rD-YDh"/>
                                         <constraint firstItem="zG2-CB-Iw2" firstAttribute="leading" secondItem="ovA-sr-XDE" secondAttribute="trailing" constant="8" id="EfP-pd-wHv"/>
                                         <constraint firstItem="7cp-VH-5d3" firstAttribute="top" secondItem="8sY-LT-9ER" secondAttribute="topMargin" id="MXm-Al-tOs"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="zG2-CB-Iw2" secondAttribute="bottom" id="Rcw-Bf-EBl"/>
@@ -80,9 +92,11 @@
                                         <constraint firstItem="ovA-sr-XDE" firstAttribute="leading" secondItem="8sY-LT-9ER" secondAttribute="leading" constant="9" id="nIe-5L-FWU"/>
                                         <constraint firstAttribute="bottom" secondItem="ovA-sr-XDE" secondAttribute="bottom" constant="11.5" id="p3Y-Uc-e3Z"/>
                                         <constraint firstItem="zG2-CB-Iw2" firstAttribute="top" secondItem="8sY-LT-9ER" secondAttribute="topMargin" constant="1" id="vWT-Cm-Z0Q"/>
+                                        <constraint firstItem="0Qr-g9-CiR" firstAttribute="top" secondItem="8sY-LT-9ER" secondAttribute="topMargin" id="vjC-BX-XWr"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="change24hLabel" destination="0Qr-g9-CiR" id="ebw-La-uou"/>
                                     <outlet property="priceUSDLabel" destination="7cp-VH-5d3" id="80n-b9-khR"/>
                                     <outlet property="rankLabel" destination="zG2-CB-Iw2" id="xFF-M3-5X7"/>
                                     <outlet property="titleLabel" destination="ovA-sr-XDE" id="mkV-WV-zxV"/>
@@ -99,7 +113,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lYc-mP-bdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="524" y="228.03598200899552"/>
+            <point key="canvasLocation" x="12" y="235.23238380809596"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="57P-n6-T4s">
@@ -115,7 +129,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eG4-pk-Hhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-226" y="327"/>
+            <point key="canvasLocation" x="-852" y="313"/>
         </scene>
     </scenes>
 </document>
