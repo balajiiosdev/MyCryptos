@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fBL-hc-Wwv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyCryptos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1438" y="68"/>
+        </scene>
+        <!--Crypto Coins-->
+        <scene sceneID="GZC-pV-DR4">
+            <objects>
+                <tableViewController id="V80-6F-omY" customClass="CoinTableViewController" customModule="MyCryptos" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="51Z-XY-Y8z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="coinCell" id="cMq-NB-41I" customClass="CoinTableViewCell" customModule="MyCryptos" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cMq-NB-41I" id="8sY-LT-9ER">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ovA-sr-XDE">
+                                            <rect key="frame" x="9" y="11" width="111" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="111" id="YFu-qg-BvA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price_usd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7cp-VH-5d3">
+                                            <rect key="frame" x="171" y="11" width="74" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="74" id="gBS-yY-7zl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zG2-CB-Iw2">
+                                            <rect key="frame" x="128" y="12" width="35" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="35" id="PEy-09-YUg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ovA-sr-XDE" firstAttribute="top" secondItem="8sY-LT-9ER" secondAttribute="top" constant="11" id="1LY-nD-Yco"/>
+                                        <constraint firstItem="zG2-CB-Iw2" firstAttribute="leading" secondItem="ovA-sr-XDE" secondAttribute="trailing" constant="8" id="EfP-pd-wHv"/>
+                                        <constraint firstItem="7cp-VH-5d3" firstAttribute="top" secondItem="8sY-LT-9ER" secondAttribute="topMargin" id="MXm-Al-tOs"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="zG2-CB-Iw2" secondAttribute="bottom" id="Rcw-Bf-EBl"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="7cp-VH-5d3" secondAttribute="bottom" constant="1" id="Wgi-8m-VjP"/>
+                                        <constraint firstItem="7cp-VH-5d3" firstAttribute="leading" secondItem="zG2-CB-Iw2" secondAttribute="trailing" constant="8" id="hbC-oG-Y1h"/>
+                                        <constraint firstItem="ovA-sr-XDE" firstAttribute="leading" secondItem="8sY-LT-9ER" secondAttribute="leading" constant="9" id="nIe-5L-FWU"/>
+                                        <constraint firstAttribute="bottom" secondItem="ovA-sr-XDE" secondAttribute="bottom" constant="11.5" id="p3Y-Uc-e3Z"/>
+                                        <constraint firstItem="zG2-CB-Iw2" firstAttribute="top" secondItem="8sY-LT-9ER" secondAttribute="topMargin" constant="1" id="vWT-Cm-Z0Q"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="priceUSDLabel" destination="7cp-VH-5d3" id="80n-b9-khR"/>
+                                    <outlet property="rankLabel" destination="zG2-CB-Iw2" id="xFF-M3-5X7"/>
+                                    <outlet property="titleLabel" destination="ovA-sr-XDE" id="mkV-WV-zxV"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Iy4-bz-n4G"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="V80-6F-omY" id="kEV-aa-DJq"/>
+                            <outlet property="delegate" destination="V80-6F-omY" id="ToN-h9-A6p"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Crypto Coins" id="Twn-A2-2Dv"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lYc-mP-bdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="228.03598200899552"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="57P-n6-T4s">
+            <objects>
+                <navigationController id="fBL-hc-Wwv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YBa-bV-xF2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="V80-6F-omY" kind="relationship" relationship="rootViewController" id="o5F-IW-4ij"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eG4-pk-Hhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226" y="327"/>
+        </scene>
+    </scenes>
+</document>
